@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AOModalStatus"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "Meu primeiro pod que disponibiliza um modal de status."
 
   # This description is used to generate tags and improve search results.
@@ -89,10 +89,10 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  spec.source_files  = "AOModalStatus/**/*
   spec.exclude_files = "Classes/Exclude"
 
-  spec.public_header_files = "AOModalStatus/**/*.h, .swift"
+  # spec.public_header_files = "AOModalStatus/**/*.h, .swift"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

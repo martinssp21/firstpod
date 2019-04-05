@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AOModalStatus"
-  spec.version      = "1.0.5"
+  spec.version      = "1.0.7"
   spec.summary      = "Meu primeiro pod que disponibiliza um modal de status."
 
   # This description is used to generate tags and improve search results.
@@ -88,9 +88,8 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-
   spec.source_files  = "AOModalStatus/Classes/**/*.{h,swift}"
-  #spec.exclude_files = "Classes/Exclude"
+	spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "AOModalStatus/**/*.h, .swift"
 
@@ -102,11 +101,9 @@ Pod::Spec.new do |spec|
   #  You can preserve files from being cleaned, please don't preserve
   #  non-essential files like tests, examples and documentation.
   #
-  spec.resources_bundles = {
-    'AOModalStatus' => ['AOModalStatus/Resources/**/*.{xib}']
-  }
+
   # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
+  spec.resources = "AOModalStatus/Classes/**/*.{png,jpg,xib,storyboard}"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

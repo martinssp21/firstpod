@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AOModalStatusView" customModule="AOModalStatus" customModuleProvider="target">
+            <connections>
+                <outlet property="headlineLabel" destination="UAn-tA-Nbi" id="9g2-B6-OQD"/>
+                <outlet property="statusImage" destination="2wb-hm-mPJ" id="jk4-er-PmB"/>
+                <outlet property="subheadLabel" destination="oG8-SM-uNM" id="fG7-XJ-jzu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <visualEffectView opaque="NO" contentMode="scaleToFill" id="Dc5-3P-GY7">
+            <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="V63-85-MGo">
+                <rect key="frame" x="0.0" y="0.0" width="230" height="230"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2wb-hm-mPJ">
+                        <rect key="frame" x="50" y="10" width="130" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="130" id="j9d-fs-DJC"/>
+                            <constraint firstAttribute="width" constant="130" id="uiO-a7-S5G"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAn-tA-Nbi">
+                        <rect key="frame" x="0.0" y="145" width="230" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="8OH-FQ-oJi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oG8-SM-uNM">
+                        <rect key="frame" x="0.0" y="171" width="230" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="T6r-Qp-Ccd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UAn-tA-Nbi" firstAttribute="leading" secondItem="V63-85-MGo" secondAttribute="leading" id="AbM-Wa-cYb"/>
+                    <constraint firstItem="2wb-hm-mPJ" firstAttribute="leading" secondItem="V63-85-MGo" secondAttribute="leading" constant="50" id="Cii-7f-9yQ"/>
+                    <constraint firstAttribute="trailing" secondItem="oG8-SM-uNM" secondAttribute="trailing" id="QxX-dc-YGh"/>
+                    <constraint firstItem="2wb-hm-mPJ" firstAttribute="top" secondItem="V63-85-MGo" secondAttribute="top" constant="10" id="Zlu-Hd-dJ8"/>
+                    <constraint firstItem="UAn-tA-Nbi" firstAttribute="top" secondItem="2wb-hm-mPJ" secondAttribute="bottom" constant="5" id="aWV-gi-PH5"/>
+                    <constraint firstItem="oG8-SM-uNM" firstAttribute="leading" secondItem="V63-85-MGo" secondAttribute="leading" id="bjN-03-g37"/>
+                    <constraint firstAttribute="trailing" secondItem="UAn-tA-Nbi" secondAttribute="trailing" id="hC5-Xj-Yao"/>
+                    <constraint firstAttribute="trailing" secondItem="2wb-hm-mPJ" secondAttribute="trailing" constant="50" id="kqb-Gc-zlq"/>
+                    <constraint firstItem="oG8-SM-uNM" firstAttribute="top" secondItem="UAn-tA-Nbi" secondAttribute="bottom" constant="5" id="tGI-de-f7r"/>
+                </constraints>
+            </view>
+            <blurEffect style="light"/>
+            <point key="canvasLocation" x="63.768115942028992" y="18.75"/>
+        </visualEffectView>
+    </objects>
+</document>

@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "AOModalStatus"
-  spec.version      = "1.0.4"
+  spec.version      = "1.0.5"
   spec.summary      = "Meu primeiro pod que disponibiliza um modal de status."
 
   # This description is used to generate tags and improve search results.
@@ -102,7 +102,9 @@ Pod::Spec.new do |spec|
   #  You can preserve files from being cleaned, please don't preserve
   #  non-essential files like tests, examples and documentation.
   #
-
+  spec.resources_bundles = {
+    'AOModalStatus' => ['AOModalStatus/Resources/**/*.{xib}']
+  }
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
 
